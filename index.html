@@ -25,7 +25,6 @@
             <div class="site-wrapper-header-top">
                 <div class="grid wide header-top">
                     <div class="row header-top-row">
-                        <div class="col l-7 m-7 c-12">
                             <div class="header-top-contact">
                                 <div class="header-top-content">
                                     <div class="header-top-content-image">
@@ -56,8 +55,6 @@
                                 </div>
         
                             </div>
-                        </div>
-                        <div class="col l-5 m-5 c-12">
                             <!-- begin: translate  -->
                             <!-- <div class="header-top-language">
                                 <div class="header-top-language-icon">
@@ -120,7 +117,6 @@
                                 </div>
                             </div>
                             <!-- end: translate                            -->
-                        </div>
                     </div>
     
                 </div>
@@ -155,11 +151,15 @@
                         <div class="header-middle-right-setting">
                             <img src="./assets/image/setting.png" alt="setting">
                         </div>
-                        <div class="header-middle-right-cart">
-                            <img src="./assets/image/cart.png" alt="cart">
+                        <div class="header-middle-right-cart" id="header-middle-right-cart">
+                            <label for="check-cart">
+                                <img  id="cart" src="./assets/image/cart.png" alt="cart">
+                            </label>
                             <p class="header-middle-right-countdown">20</p>
 
-                            <div class="list-cart">
+                            <input  type="checkbox" hidden id="check-cart" class="check-cart">
+
+                            <label for="check-cart" class="list-cart" id="list-cart">
                                 <h3 class="list-cart-title"> Sản Phẩm Mới Thêm</h3>
                                 <ul class="list-cart-content">
 
@@ -197,7 +197,7 @@
                                     <p class="footer-cart-text">212 Thêm Vào Giỏ Hàng</p>
                                     <button class="footer-cart-btn">Xem Giỏ Hàng</button>
                                 </div>
-                            </div>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -207,14 +207,14 @@
                 <div  class="header-bottom">
                     <div class="grid wide ">
                         <div class="row header-bottom-row">
-                            <div class="col header-bottom-left">
-                                <label   for="categories-mobile_input" class="categories">
+                            <div class="header-bottom-left" id="header-bottom-left">
+                                <label   for="categories-mobile_input" class="categories" id="categories">
                                     <div class="header-bottom-icon"></div>
                                     <h4 class="Categories-title">Categories</h4>
                                 </label>
                                 <input type="checkbox" hidden class="categories_input" id="categories-mobile_input">
 
-                                <label for="categories-mobile_input" class="dropdown">
+                                <label for="categories-mobile_input" id="dropdown" class="dropdown">
                                     <ul class="dropdown-list">
                                         <li class="dropdown-item">
                                             <label for="dropdown-con-lable" class="dropdown-item-contro">
@@ -281,7 +281,7 @@
                             
 
                            
-                            <div class="col nav-menu">
+                            <div class="nav-menu">
                                 <ul class="menu-header">
                                     <li><a href="#">home</a></li>
                                     <li><a href="#">about</a></li>
@@ -832,7 +832,7 @@
             <div class="footer-top">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-4 m-4 c-12">
+                        <div class="col l-4 m-6 c-12">
                             <div class="contact-us-footer">
                                 <h5 class="footer-top-title">contact us</h5>
                                 <div class="content-footer-wrapper1">
@@ -859,7 +859,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3 m-3 c-12">
+                        <div class="col l-3 m-6 c-12">
                             <div class="company-footer">
                                 <h5 class="footer-top-title">company</h5>
                                 <div class="content-footer-wrapper">
@@ -875,7 +875,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3 m-3 c-12">
+                        <div class="col l-3 m-6 c-12">
                             <div class="categories-footer">
                                 <h5 class="footer-top-title">categories</h5>
                                 <div class="content-footer-wrapper">
@@ -891,7 +891,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-2 m-2 c-12">
+                        <div class="col l-2 m-6 c-12">
                             <div class="quick-link">
                                 <h5 class="footer-top-title">quick-links</h5>
                                 <div class="content-footer-wrapper">

@@ -100,6 +100,30 @@ jQuery(document).ready(function($){
         autocomplete(document.getElementById("myInput"), countries);
     }
 
+    // begin: ẩn hiện dropdown
+    $('html').click(function() {
+      $('#dropdown').hide();
+    });
+    $('#header-bottom-left').click(function(event) {
+      event.stopPropagation();
+    });
+    
+    $('#categories').click(function(event) {
+        $('#dropdown').toggle();
+    });
+    // end: ẩn hiện dropdown 
+
+    $('html').click(function() {
+      $('#list-cart').hide();
+    });
+    $('#header-middle-right-cart').click(function(event) {
+      event.stopPropagation();
+    });
+    
+    $('#cart').click(function(event) {
+        $('#list-cart').toggle();
+    });
+
 
 });
 
@@ -249,19 +273,10 @@ function autocomplete(inp, arr) {
   });
 }
 
-
-
-
-
-
-
-
-
-
-
 //translate
 var tnum = 'en';
 $(document).click(function () {
+  // xóa bỏ class active2
     $('.setting-translate, .more_translate').removeClass('active2');
 });
 $('.setting-translate .current_translate').click(function(e){    
@@ -288,6 +303,7 @@ $('.more_translate .translate').click(function(){
   }else{
     $('body').attr('dir', 'ltr');
   }
-  
 });
+
+
 
